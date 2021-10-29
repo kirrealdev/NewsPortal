@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GridCollectionViewCell" customModule="Practice_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="424"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="424"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GpK-6S-hZT">
+                        <rect key="frame" x="0.0" y="0.0" width="293" height="366"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="GridCollectionViewCellIdentifier" translatesAutoresizingMaskIntoConstraints="NO" id="ue9-7i-eCH">
+                                <rect key="frame" x="0.0" y="0.0" width="253" height="178.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXN-mx-fe6">
+                                <rect key="frame" x="0.0" y="188.5" width="253" height="38"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The news description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUy-Aj-kBs">
+                                <rect key="frame" x="0.0" y="236.5" width="253" height="57"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bav-Wb-uVo">
+                                <rect key="frame" x="0.0" y="303.5" width="26.5" height="12"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BUy-Aj-kBs" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" id="47e-sw-8bC"/>
+                <constraint firstItem="RXN-mx-fe6" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" id="KA0-oU-VKc"/>
+                <constraint firstItem="RXN-mx-fe6" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.1" id="SNt-4d-26g"/>
+                <constraint firstItem="ue9-7i-eCH" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.47" id="XaA-vI-QQn"/>
+                <constraint firstItem="BUy-Aj-kBs" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.15" id="cfO-XD-fOg"/>
+                <constraint firstItem="ue9-7i-eCH" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" id="hiC-tx-cB6"/>
+            </constraints>
+            <size key="customSize" width="253" height="424"/>
+            <connections>
+                <outlet property="dateGridLabel" destination="bav-Wb-uVo" id="Nlo-Kv-y86"/>
+                <outlet property="descriptionGridLabel" destination="BUy-Aj-kBs" id="XUg-w5-JO1"/>
+                <outlet property="imageView" destination="ue9-7i-eCH" id="vcS-5T-smB"/>
+                <outlet property="titleGridLabel" destination="RXN-mx-fe6" id="NHK-F3-w0J"/>
+            </connections>
+            <point key="canvasLocation" x="97.826086956521749" y="164.73214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListCollectionViewCell" customModule="Practice_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="512" height="381"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="512" height="381"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d2m-9L-tQT">
+                        <rect key="frame" x="0.0" y="0.0" width="552" height="375"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="ListCollectionViewCellIdentifier" translatesAutoresizingMaskIntoConstraints="NO" id="boo-eC-uMA">
+                                <rect key="frame" x="0.0" y="0.0" width="512" height="202"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCi-Rn-L9Q">
+                                <rect key="frame" x="0.0" y="212" width="512" height="30"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The news description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXe-FR-Bwg">
+                                <rect key="frame" x="0.0" y="252" width="512" height="45.5"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pp-hB-zBR">
+                                <rect key="frame" x="0.0" y="307.5" width="24.5" height="12"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="boo-eC-uMA" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.53" id="Dah-rQ-zd3"/>
+                <constraint firstItem="boo-eC-uMA" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" id="Iqr-Sq-xgx"/>
+                <constraint firstItem="EXe-FR-Bwg" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" id="JZT-Mh-6o1"/>
+                <constraint firstItem="nCi-Rn-L9Q" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" id="TPJ-ge-9B1"/>
+                <constraint firstItem="nCi-Rn-L9Q" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.1" id="YYD-tm-Wwd"/>
+                <constraint firstItem="EXe-FR-Bwg" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.15" id="gZB-PW-nRk"/>
+            </constraints>
+            <size key="customSize" width="512" height="398"/>
+            <connections>
+                <outlet property="dateListLabel" destination="3pp-hB-zBR" id="rIB-mJ-dXw"/>
+                <outlet property="descriptionListLabel" destination="EXe-FR-Bwg" id="Z1P-Tm-bpj"/>
+                <outlet property="imageView" destination="boo-eC-uMA" id="s6u-2V-wsE"/>
+                <outlet property="titleListLabel" destination="nCi-Rn-L9Q" id="Lwb-kv-pYS"/>
+            </connections>
+            <point key="canvasLocation" x="410.14492753623193" y="153.68303571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
